@@ -5,6 +5,14 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
-  title = 'my-ecommerce-site';
+
+  appTitle = 'My Ecommerce Site';
+  currentDateTime: Date = new Date();
+
+  setCurrentTime() {
+      this.currentDateTime = new Date();
+  }
+
 }
